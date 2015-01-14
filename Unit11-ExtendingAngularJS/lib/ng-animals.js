@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngAnimals', [])
+angular.module('ntgAnimals', [])
 
 	.directive('simple', function () {
 		return {

@@ -3,7 +3,7 @@
 // Simple refactor out the directive, filter and factory into a new module and
 // add the module dependency here:
 
-var app = angular.module('MyApp', ['ngTouch', 'ngAnimals']);	//*** Add new ngAnimals module dependency
+var app = angular.module('MyApp', ['ngTouch', 'ntgAnimals']);	//*** Add new ngAnimals module dependency
 
 app.controller('AppCtrl', ['$scope', '$http', 'animal', function ($scope, $http, animal) {
 

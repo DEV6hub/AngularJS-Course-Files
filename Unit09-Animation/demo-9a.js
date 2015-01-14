@@ -23,7 +23,7 @@ app.controller('AppCtrl', ['$scope', '$location', function ($scope, $location) {
 
 app.controller('LoginCtrl', ['$scope', '$location', function ($scope, $location) {
 	$scope.model = {
-		email : 'oliverm@yahoo.com',
+		email : 'angular@newyyz.com',
 		password : 'password'
 	};
 

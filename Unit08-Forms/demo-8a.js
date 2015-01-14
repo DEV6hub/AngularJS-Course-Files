@@ -38,16 +38,7 @@ app.controller('LoginCtrl', ['$scope', '$location', '$window', function ($scope,
 		password : ''
 	};
 
-	$scope.login = function (loginForm) {
-
-		console.log('loginForm: ', loginForm);
-
-		if (loginForm.$valid) {
-			$location.path('/home');
-		} else {
-			$window.alert('Invalid form!');
-		}
-	};
+	
 
 }]);
 
