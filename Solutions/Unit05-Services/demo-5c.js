@@ -6,6 +6,29 @@ app.config(function ($logProvider) {
   $logProvider.debugEnabled(false);
 });
 
+app.config(function ($httpProvider) {
+  $httpProvider.defaults.useXDomain = true;
+  $httpProvider.defaults.withCredentials = true;
+  delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  $httpProvider.defaults.headers.common.Accept = 'application/json';
+  $httpProvider.defaults.headers.common['Content-Type'] = 'application/json';
+  $httpProvider.defaults.headers.post = {
+    'Content-Type': 'application/json'
+  };
+  $httpProvider.interceptors.push('authInterceptor'); //'spinnerInterceptor'
+});
+
+app.factory('authInterceptor', function ($q, $rootScope) {
+  return {
+    responseError: function (rejection) {
+      if (rejection.status === 401) {
+        $rootScope.$emit('request.unauthorized');
+      }
+      return $q.reject(rejection);
+    }
+  };
+});
+
 app.controller('MyCtrl', ['$scope', '$log', function ($scope, $log) {
   $scope.model = {
     countries: [
