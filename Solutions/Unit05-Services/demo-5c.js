@@ -18,6 +18,20 @@ app.config(function ($httpProvider) {
   $httpProvider.interceptors.push('authInterceptor'); //'spinnerInterceptor'
 });
 
+/*
+
+There are two kinds of interceptors (and two kinds of rejection interceptors):
+
+  request: interceptors get called with a http config object. The function is free to modify the config object or create a new one. The function needs to return the config object directly, or a promise containing the config or a new config object.
+
+  requestError: interceptor gets called when a previous interceptor threw an error or resolved with a rejection.
+
+  response: interceptors get called with http response object. The function is free to modify the response object or create a new one. The function needs to return the response object directly, or as a promise containing the response or a new response object.
+
+  responseError: interceptor gets called when a previous interceptor threw an error or resolved with a rejection.
+
+*/
+
 app.factory('authInterceptor', function ($q, $rootScope) {
   return {
     responseError: function (rejection) {
