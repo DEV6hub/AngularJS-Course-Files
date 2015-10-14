@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit03 Controllers</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/course.css" />
+  <style>
+    /* Style all of the two-way bindings */
+    .ng-binding {
+      background-color: hotpink;
+    }
+  </style>
+</head>
+
+<body ng-app="MyApp">
+
+  <div ng-controller="AppCtrl as app">
+
+    <!-- Placeholders do not populate model values -->
+    <input placeholder="..." ng-model="app.userInput">
+
+    <button ng-click="app.getUserInput()">app.userInput</button>
+    <button ng-click="app.getUserInput()">{{app.userInput}}</button>
+
+    <div>{{app.userInput}}</div>
+    <hr>
+
+    <!--
+      Use ng-repeat to create a <p> tag for every item in the app.sports array.
+      Each iteration will replace sport with the value in the array.
+     -->
+    <p ng-repeat="sport in app.sports">
+      {{sport}}
+    </p>
+  </div>
+
+
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="demo-3f.js"></script>
+</body>
+
+</html>

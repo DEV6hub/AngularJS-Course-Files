@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit05 Directives</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="../assets/css/course.css" />
+</head>
+
+<body ng-app="MyApp">
+
+  <div collapsed class="expandable-box">
+    <div class="header">Header</div>
+    <div class="content">
+      Lorem Ipsum Dolor Sit Amet
+      <br> Cogito ergo sum
+      <br>
+    </div>
+  </div>
+
+  <!-- Can prepend 'data-' to attribute directives for W3C validation -->
+  <div data-collapsed class="expandable-box">
+    <div class="header">A Different Header</div>
+    <div class="content">
+      Cogito ergo sum
+      <br> Lorem Ipsum Dolor Sit Amet
+      <br>
+    </div>
+  </div>
+
+  <script src="../bower_components/angular/angular.js"></script>
+  <!-- Include the Underscore.js library -->
+  <script src="../bower_components/underscore/underscore.js"></script>
+  <script src="demo-5b.js"></script>
+</body>
+
+</html>

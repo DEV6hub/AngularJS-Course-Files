@@ -1,4 +1,6 @@
-/* jshint -W097 */
-'use strict';
+/* global angular */
+'use strict()';
 
-
+// Declare your application module
+angular
+  .module('myApp', []);

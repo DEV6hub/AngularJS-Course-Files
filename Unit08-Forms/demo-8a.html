@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Unit08 Forms</title>
-	<link rel="stylesheet" href="../lib/bootstrap-3.0.2/bootstrap.min.css"/>
-	<link rel="stylesheet" href="../assets/css/course.css"/>
+  <title>Unit08 Forms</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/course.css" />
 </head>
+
 <body ng-app="MyApp">
 
-	<div ng-controller="AppCtrl">
-		<ng-view/>
-	</div>
+  <div ng-controller="AppCtrl as app">
+    <ng-view></ng-view>
+  </div>
 
-	<script src="../lib/angular-1.2/angular.js"></script>
-	<script src="../lib/angular-1.2/angular-route.min.js"></script>
-	<script src="demo-8a.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-route/angular-route.js"></script>
+  <script src="demo-8a.js"></script>
 </body>
+
 </html>

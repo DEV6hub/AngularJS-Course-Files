@@ -1,0 +1,308 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Lora', serif;
+}
+
+[ng-click] {
+  cursor: pointer;
+}
+
+.accent {
+  color: #A77139;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.container {
+  width: 60%;
+  position: relative;
+  top: 50px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: white;
+}
+
+.navbar-brand-image {
+  width: 150px;
+  margin-top: -11px;
+}
+
+.navbar-toggle {
+  border-color: transparent !important;
+}
+
+.navbar-toggle:hover {
+  background-color: transparent !important;
+}
+
+.navbar-toggle:focus {
+  background-color: white !important;
+}
+
+.navbar-form-button:focus {
+  box-shadow: 0 0 5px rgba(211, 130, 48, 0.87);
+  border: 1px solid rgba(211, 130, 48, 0.87);
+}
+
+a {
+  color: #A77139;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+a:focus {
+  color: #A77139;
+}
+
+.search-form {
+  background-color: black;
+  border-radius: 0 !important;
+  color: white !important;
+  margin-bottom: none !important;
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+.search-form-input {
+  border-radius: 0;
+  background-color: black;
+  color: white !important;
+  margin-bottom: 20px !important;
+}
+
+.search-instruction {
+  font-family: 'Montserrat', sans-serif;
+  color: #808080 !important;
+  text-transform: uppercase;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+
+.input-group-addon {
+  background-color: black;
+  border: none;
+  padding-bottom: 25px;
+}
+
+.thumbnail {
+  width: 50% !important;
+  height: auto;
+  margin-top: 10px;
+  background-color: transparent !important;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.http-response-table {
+  display: none;
+}
+
+.icon-bar {
+  background-color: black !important;
+}
+
+h1 {
+  color: white;
+  text-transform: lowercase;
+}
+
+.filmDescription {
+  width: 50% !important;
+}
+
+.add-film-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-film-form-input {
+  background-color: transparent;
+  border-radius: 0 !important;
+  color: white !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.add-film-form-input {
+  padding-top: 10px;
+}
+
+input[type=text]:focus {
+  box-shadow: 0 0 5px rgba(211, 130, 48, 0.87);
+  border: 1px solid rgba(211, 130, 48, 0.87);
+}
+
+textarea:focus {
+  box-shadow: 0 0 5px rgba(211, 130, 48, 0.87) !important;
+  border: 1px solid rgba(211, 130, 48, 0.87) !important;
+}
+
+.form-instruction {
+  font-family: 'Montserrat', sans-serif;
+  color: #A77139 !important;
+  padding-bottom: 13px;
+}
+
+.add-film-btn {
+  outline: none !important;
+  width: 100%;
+  border-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.add-film-btn:focus:active {
+  box-shadow: 0 0 5px rgba(211, 130, 48, 0.87);
+  border: 1px solid rgba(211, 130, 48, 0.87);
+}
+
+.my-list-container {
+  min-height: 500px;
+}
+
+table {
+  width: 100%;
+}
+
+.film-director {
+  color: #A77139;
+}
+
+.space {
+  width: 50px;
+  height: 10px;
+  background: black;
+}
+
+th {
+  color: white;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.glyphicon-remove:hover {
+  color: #A77139;
+}
+
+.hiddenRow {
+  padding-bottom: 20px;
+}
+
+th {
+  width: 100%;
+  ;
+}
+
+
+.film-year {
+  color: #808080;
+}
+
+.film-title {
+  display: inline-block;
+}
+
+.accordion-toggle {
+  content: url("../images/gray-reel.png");
+}
+
+.accordion-toggle:hover {
+  content: url("../images/white-reel.png");
+}
+
+.accordion-description {
+  color: gray;
+}
+
+.accordion-row {
+  width: 100%;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.gray-heart {
+  content: url("../images/gray-heart.png");
+}
+
+.gray-heart:hover {
+  transform: scale(1.2);
+}
+
+.gray-eye {
+  content: url("../images/gray-glasses.png");
+}
+
+.gray-eye:hover {
+  transform: scale(1.2);
+}
+
+
+/* Checkbox */
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkbox-container {
+  width: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.checkbox-container img {
+  width: 50px;
+  height: auto;
+  padding: 10px;
+}
+
+.checkbox-container label {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 6.5px;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+
+.checkbox-container label:after {
+  opacity: 0.2;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 8px;
+  left: 8px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkbox-container label:hover::after {
+  opacity: 0.5;
+}
+
+.checkbox-container input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}

@@ -1,5 +1,9 @@
 <div>
-	Welcome to the Home Screen
-	<hr/>
-	<button class="btn btn-warning" ng-click="logout()">Log Out</button>
+	<h3>Welcome to the Home Screen</h3>
+	<hr>
+  <!-- Changing the route through an href -->
+  <a class="btn btn-success" href="#/blog/page/2/section/5?search=search-query">Blog</a>
+  <!-- Changing the route from the controller -->
+	<button class="btn btn-warning" ng-click="home.logout()">
+  Log Out</button>
 </div>

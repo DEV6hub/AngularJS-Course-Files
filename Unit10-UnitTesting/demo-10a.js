@@ -1,70 +1,90 @@
-'use strict';
+/* global angular */
+(function () {
+  'use strict';
 
-var app = angular.module('MyApp', ['ngTouch']);
+  angular
+    .module('MyApp', ['ngTouch'])
+    .controller('AppCtrl', AppCtrl)
+    .directive('simple', simple)
+    .filter('formatDate', formatDate)
+    .factory('animal', animal);
 
-app.controller('AppCtrl', ['$scope', '$http', 'animal', function ($scope, $http, animal) {
+  function AppCtrl($http, animal) {
+    var vm = this;
 
-	$scope.model = {
-		text : 'Free the following:',
-		now : new Date(),
-		animals : [],
-		animal : {}
-	};
+    vm.text = 'Free the following:';
+    vm.now = new Date();
+    vm.animals = [];
+    vm.animal = {};
 
-	animal.put({id : '299834923', name : 'Yet another free duck'});
-	$scope.model.animal = animal.get();
+    animal.put({
+      id: '299834923',
+      name: 'Yet another free duck'
+    });
 
-	$http.get('data/animals.json')
-		.success(function (data) {
-			$scope.model.animals = data.animals;
-			console.log('$scope.model.animals: ', $scope.model.animals);
-		})
-		.error(function () {
-		}
-	);
-}]);
+    vm.animal = animal.get();
 
-app.directive('simple', function () {
-	return {
-		restrict : 'A',
-		link : function (scope, element) {
-			element.addClass('simple');
-		}
-	};
-});
+    $http.get('data/animals.json')
+      .then(
+        function success(response) {
+          vm.animals = response.data.animals;
+          console.log('vm.animals: ', vm.animals);
+        },
+        function error(response) {
+          console.error('Error getting json file with response: ', response);
+        }
+      );
+  }
 
-app.filter('formatdate', ['$filter', function ($filter) {
-	return function (date) {
-		var d = new Date(date),
-			returnDate;
-		returnDate = $filter('date')(new Date(d.getFullYear(), d.getMonth(), d.getDate()), 'MMMM d, yyyy');
-		return (date ? returnDate : '');
-	};
-}]);
+  function simple() {
+    var directive = {
+      restrict: 'A',
+      link: linkFunc
+    };
+    return directive;
 
-app.factory('animal', function () {
-	'use strict';
+    function linkFunc(scope, element) {
+      element.addClass('simple');
+    }
+  }
 
-	var animal = {};
+  formatDate.$inject = ['$filter'];
 
-	var emptyAnimal = {
-		id : '0',
-		name : ''
-	};
+  function formatDate($filter) {
+    return dateFilter;
 
-	var animalService = {
-		create : function () {
-			angular.copy(emptyAnimal, animal);
-		},
-		get : function () {
-			return animal;
-		},
-		put : function (newAnimal) {
-			angular.copy(newAnimal, animal);
-		}
-	};
+    function dateFilter(date) {
+      var d = new Date(date),
+        returnDate;
+      returnDate = $filter('date')(new Date(d.getFullYear(), d.getMonth(), d.getDate()), 'MMMM d, yyyy');
+      return (date ? returnDate : '');
+    }
+  }
 
-	return animalService;
-});
+  function animal() {
 
+    var currentAnimal = {};
 
+    var emptyAnimal = {
+      id: '0',
+      name: ''
+    };
+
+    var animalFactory = {
+      create: function () {
+        angular.copy(emptyAnimal, currentAnimal);
+      },
+
+      get: function () {
+        return currentAnimal;
+      },
+
+      put: function (newAnimal) {
+        angular.copy(newAnimal, currentAnimal);
+      }
+    };
+
+    return animalFactory;
+  }
+
+})();

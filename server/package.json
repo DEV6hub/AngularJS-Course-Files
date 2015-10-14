@@ -1,16 +1,14 @@
 {
   "name": "server",
   "version": "0.0.1",
-  "description": "A text server for the AngularJS course.",
+  "description": "A test server for the AngularJS course.",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "ejs": "~0.8.4",
-    "express": "~3.3.5"
+    "express": "^3.3.8"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Oliver Merk",
+  "author": "New Toronto Group",
   "license": "Apache"
 }

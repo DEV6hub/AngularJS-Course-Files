@@ -1,43 +1,57 @@
-// *** Start the server! ***
+/* global angular, s */
+(function () {
+  'use strict';
 
-'use strict';
+  // *** Remember to start the server! ***
 
-var app = angular.module('MyApp', []);
+  angular
+    .module('MyApp', [])
+    .factory('httpService', httpService)
+    .controller('MyCtrl', MyCtrl)
+    .filter('titleCase', titleCaseFilter);
 
-app.factory('httpService', ['$http', function ($http) {
+  httpService.$inject = ['$http'];
 
-	var httpService = {
+  function httpService($http) {
+    var factory = {
 
-		send : function () {
-			var promise = $http({
-				method : 'POST',
-				url : 'http://localhost:3000/getUsers'
-			});
-			return promise;
-		}
-	};
+      query: function () {
+        var promise = $http({
+          method: 'GET',
+          url: 'http://localhost:3000/getUsers'
+        });
+        return promise;
+      }
+    };
 
-	return httpService;
-}]);
+    return factory;
+  }
 
-app.controller('MyCtrl', ['$scope', 'httpService', function ($scope, httpService) {
-	$scope.model = {
-		users : []
-	}
+  MyCtrl.$inject = ['httpService'];
 
-	$scope.getUsers = function () {
-		var promise = httpService.send();
-		promise.then(
-			function success(result) {
-				console.log('result: ', result);
-				$scope.model.users = result.data;
-			},
-			function failure(error) {
-				console.log('error: ', error);
-			}
-		);
-	};
+  function MyCtrl(httpService) {
+    var vm = this;
+    vm.users = [];
+    vm.getUsers = function () {
+      var promise = httpService.query();
+      promise.then(
+        function success(result) {
+          console.log('result: ', result);
+          vm.users = result.data;
+        },
+        function failure(error) {
+          console.log('error: ', error);
+        }
+      );
+    };
+  }
 
-}]);
+  // Define a new filter that changes an input string to Title case
+  function titleCaseFilter() {
+    return function (input) {
+      console.log('input: ', input);
+      return s.capitalize(input);
+    };
+  }
 
-
+})();

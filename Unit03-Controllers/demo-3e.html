@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Unit03 Controllers</title>
-	<link rel="stylesheet" href="../lib/bootstrap-3.0.2/bootstrap.min.css"/>
-	<link rel="stylesheet" href="../assets/css/course.css"/>
-</head>
-<body ng-app="MyApp">
-	<div ng-controller="AppCtrl">
-		<input placeholder="..." ng-model="model.userInput"></input>
-		<button ng-click="getUserInput()">model.userInput</button>
-		<button ng-click="getUserInput()">{{model.userInput}}</button>
-		<div>{{model.userInput}}</div>
-		<hr />
-		<p ng-repeat="sport in model.sports">{{sport}}</p>
-	</div>
 
-	<script src="../lib/angular-1.2/angular.js"></script>
-	<script src="demo-3e.js"></script>
+<head>
+  <title>Unit03 Controllers</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/course.css" />
+</head>
+
+<body ng-app="MyApp">
+
+  <!--
+    The child controller displays its own value for $scope.property, because child scopes overwrite parent properties
+    with the same name!
+  -->
+
+  <div ng-controller="ParentCtrl">
+    <div>Parent: {{property}}</div>
+    <div ng-controller="ChildCtrl">
+      <div>Child: {{property}}</div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!--
+    You may want to display the parent controllers value instead, use the "$parent" property
+  -->
+
+  <div ng-controller="ParentCtrl">
+    <div>Parent: {{property}}</div>
+    <div ng-controller="ChildCtrl">
+      <div>Parent called from Child: {{$parent.property}}</div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!--
+    The "parent" method can get out of hand, now your DOM structure is implicitly bound to the controller
+    Nesting issue: parent.parent.parent(.....)
+    "controller as" lets us refer directly to the parent controller by name, without going through scope heirarchy
+  -->
+
+  <div ng-controller="ParentCtrl2 as parent">
+    <div>Parent: {{parent.property}}</div>
+    <div ng-controller="ChildCtrl2 as child">
+      <div>Child: {{child.property}}</div>
+      <div>Parent: {{parent.property}}</div>
+    </div>
+  </div>
+
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="demo-3e.js"></script>
 </body>
+
 </html>

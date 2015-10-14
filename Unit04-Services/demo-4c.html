@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit04 Services</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/course.css" />
+</head>
+
+<body ng-app="MyApp">
+
+  <div ng-controller="MyCtrl as ctrl">
+    <div ng-repeat="country in ctrl.countries">
+      <div ng-if="country.gdp !== 0">
+        <label>{{country.name}} - {{country.indicatorName}}:</label>
+        {{country.gdp | currency}}
+      </div>
+    </div>
+  </div>
+
+  <script src="../bower_components/angular/angular.js"></script>
+  <!-- Include the ngResource module -->
+  <script src="../bower_components/angular-resource/angular-resource.js"></script>
+  <script src="demo-4c.js"></script>
+</body>
+
+</html>

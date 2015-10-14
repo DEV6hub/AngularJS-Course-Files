@@ -1,0 +1,67 @@
+<h1>I Want To <span class="accent">Watch</span> These</h1>
+<hr>
+<div class="row">
+  <!-- Add Film -->
+  <div class="col-md-6">
+    <form class="add-film-form" name="addFilmForm" ng-submit="toWatch.addFilm(addFilmForm)" novalidate>
+      <p class="form-instruction">ADD A MOoVIE ...</p>
+      <div class="form-group" ng-class="{'has-error': addFilmForm.title.$dirty && addFilmForm.title.$invalid}">
+        <input class="form-control add-film-form-input" type="text" name="title" placeholder="Title" ng-model="toWatch.film.title" required>
+        <p class="help-block" ng-show="addFilmForm.title.$dirty && addFilmForm.title.$error.required">The title is required</p>
+      </div>
+      <div class="form-group" ng-class="{'has-error': addFilmForm.year.$dirty && addFilmForm.year.$invalid}">
+        <input class="form-control add-film-form-input" type="number" name="year" placeholder="Year" ng-model="toWatch.film.year" required>
+        <p class="help-block" ng-show="addFilmForm.year.$dirty && addFilmForm.year.$error.required">The year is required</p>
+      </div>
+      <div class="form-group" ng-class="{'has-error': addFilmForm.director.$dirty && addFilmForm.director.$invalid}">
+        <input class="form-control add-film-form-input" type="text" name="director" placeholder="Director" ng-model="toWatch.film.director" required>
+        <p class="help-block" ng-show="addFilmForm.director.$dirty && addFilmForm.director.$error.required">The director is required</p>
+      </div>
+      <div class="form-group" ng-class="{'has-error': addFilmForm.description.$dirty && addFilmForm.description.$invalid}">
+        <textarea class="form-control search-form-input" name="description" placeholder="plot..." ng-model="toWatch.film.description" required></textarea>
+        <p class="help-block" ng-show="addFilmForm.description.$dirty && addFilmForm.description.$error.required">The description is required</p>
+      </div>
+      <button type="submit" class="btn btn-default add-film-btn" ng-disabled="addFilmForm.$invalid">Gotta Watch It</button>
+    </form>
+    <hr>
+    <form name="searchFilmForm" ng-submit="toWatch.fetchFilm()" novalidate>
+      <p class="form-instruction">SEARCH FOR A MOoVIE ...</p>
+      <div class="form-group">
+        <input type="text" class="form-control search-form-input" placeholder="Enter full movie name" ng-model="toWatch.searchOMDB">
+      </div>
+      <button type="submit" class="btn btn-default add-film-btn">Gotta Find It</button>
+    </form>
+    <br>
+  </div>
+  <!-- Search For Film -->
+  <div class="col-md-6">
+    <div class="form-instruction">WERE YOU LOOKING FOR...</div>
+    <div ng-if="toWatch.loading">
+      Loading results...
+    </div>
+    <div ng-if="toWatch.result.Response === 'False'">
+      Oops! We couldn't find it... <span class="accent">sorry</span>.
+    </div>
+    <div ng-if="toWatch.result.Response === 'True'">
+      <img ng-src="{{ toWatch.result.Poster === 'N/A' ? 'http://placehold.it/150x220&text=N/A' : toWatch.result.Poster }}" class="thumbnail animated flip movie-poster">
+      <h4><a ng-href="http://imdb.com/title/{{ toWatch.result.imdbID }}" target="_blank">{{ toWatch.result.Title }}</a></h4>
+      <p class="film-year">({{ toWatch.result.Year }})</p>
+      <p>Directed by: </p>
+      <p class="film-director">{{ toWatch.result.Director }} </p>
+      <p>{{ toWatch.result.Plot }}</p>
+      <p>IMDb Rating: {{ toWatch.result.imdbRating }}</p>
+      <br>
+      <button class="btn btn-default add-film-btn" ng-click="toWatch.addSearchedFilm()">ADD IT TO WATCH LIST</button>
+    </div>
+  </div>
+</div>
+<!-- Film List -->
+<div class="my-list-container">
+  <hr>
+  <h4>My<span class="accent lowercase"> list</span></h4>
+  <div class="input-group search-bar">
+    <input type="text" class="form-control search-form-input" placeholder="Search through my list by title" ng-model="toWatch.searchList">
+    <span class="input-group-addon bar-style"><i class="glyphicon glyphicon-search"></i></span>
+  </div>
+  <film-list films="toWatch.films" search="toWatch.searchList" remove="toWatch.removeFilm(film)" show="to-watch"></film-list>
+</div>

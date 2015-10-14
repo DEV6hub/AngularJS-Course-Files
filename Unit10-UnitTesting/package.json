@@ -1,25 +1,25 @@
 {
-	"name" : "Unit10-UnitTesting",
-	"version" : "0.0.1",
-	"description" : "Unit Testing for AngularJS.",
-	"main" : "",
-	"dependencies" : {
-		"karma" : "~0.10",
-		"karma-phantomjs-launcher": "~0.1"
-	},
-	"devDependencies" : {},
-	"scripts" : {
-		"test" : "echo \"Error: no test specified\" && exit 1"
-	},
-	"author" : "Oliver Merk",
-	"license" : "Apache",
-	"repository" : {
-		"type" : "git",
-		"url" : "NoRepo"
-	},
-	"keywords" : [
-		"AngularJS",
-		"Karma"
-	],
-	"readme" : "goway"
+  "name": "Unit10-UnitTesting",
+  "version": "0.0.1",
+  "description": "Unit Testing for AngularJS.",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-core": "~2.3.4",
+    "karma": "~0.13.10",
+    "karma-chrome-launcher": "~0.2.0",
+    "karma-jasmine": "~0.3.6",
+    "karma-phantomjs-launcher": "~0.2.1",
+    "phantomjs": "~1.9.18"
+  },
+  "author": "New Toronto Group",
+  "license": "Apache",
+  "repository": {
+    "type": "git",
+    "url": "NoRepo"
+  },
+  "keywords": [
+    "AngularJS",
+    "Karma"
+  ]
 }

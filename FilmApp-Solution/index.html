@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FilmApp</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.5/awesome-bootstrap-checkbox.css">
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="assets/css/animation.css">
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+</head>
+<body ng-app="FilmApp">
+  <nav ng-controller="NavCtrl as nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid navigation-container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" ng-click="nav.toggleList()">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/to-watch"><img class="navbar-brand-image" src="assets/images/logo.png" alt="logo"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" uib-collapse="nav.hideList">
+        <ul class="nav navbar-nav navbar-right navigation-container">
+          <li><a class="navbar-link" href="#/to-watch" ng-click="nav.closeList()">watchlist</a></li>
+          <li><a class="navbar-link" href="#/watched" ng-click="nav.closeList()">watched</a></li>
+          <li><a class="navbar-link" href="#/faves" ng-click="nav.closeList()">favourites</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <ng-view class="view-animate"></ng-view>
+  </main>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+
+  <script src="app.js"></script>
+  <script src="scripts/controllers/faves.js"></script>
+  <script src="scripts/controllers/nav.js"></script>
+  <script src="scripts/controllers/to-watch.js"></script>
+  <script src="scripts/controllers/watched.js"></script>
+  <script src="scripts/services/film-service.js"></script>
+  <script src="scripts/services/omdb.js"></script>
+  <script src="scripts/directives/film-list.js"></script>
+  <script src="scripts/directives/film.js"></script>
+  <script src="scripts/filters/filter-by.js"></script>
+
+</body>
+</html>

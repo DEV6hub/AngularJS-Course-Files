@@ -1,0 +1,31 @@
+<div class="film">
+  <div class="clearfix">
+    <div class="film-title" ng-click="showDetails = !showDetails">
+      <h4>{{film.title}} <span class="film-year">({{film.year}})</span></h4>
+    </div>
+    <div class="pull-right">
+      <div class="checkbox-container">
+        <input type="checkbox" ng-model="film.watched" ng-attr-id="watched{{ index }}">
+        <label ng-attr-for="watched{{ index }}"></label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" ng-attr-id="favourite{{ index }}" ng-model="film.favourite">
+        <label ng-attr-for="favourite{{ index }}"></label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" aria-label="Toggle Details" ng-attr-id="details{{ index }}" ng-model="showDetails">
+        <label ng-attr-for="details{{ index }}"></label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div colspan="4" class="accordion-row animate-show" ng-show="showDetails">
+      <div>
+        Directed by: <strong class="film-director">{{film.director}}</strong>
+        <a class="pull-right" ng-click="remove()"><i class="glyphicon glyphicon-remove"></i></a>
+        <hr>
+        <div class="accordion-description">{{film.description}}</div>
+      </div>
+    </div>
+  </div>
+</div>

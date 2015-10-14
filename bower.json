@@ -1,0 +1,26 @@
+{
+  "name": "Demos",
+  "version": "0.0.0",
+  "homepage": "https://github.com/NewTorontoGroup/AngularJS-Course-Files",
+  "authors": [
+    "New Toronto Group"
+  ],
+  "description": "Demo files for New Toronto Group's AngularJS Fundamentals course",
+  "main": "index.html",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.7",
+    "underscore": "~1.8.3",
+    "angular-resource": "~1.4.7",
+    "underscore.string": "~3.2.2",
+    "angular-route": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "angular-touch": "~1.4.7",
+    "angular-mocks": "~1.4.7",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "ngstorage": "~0.3.9",
+    "font-awesome": "~4.4.0",
+    "angular-bootstrap": "~0.13.4"
+  }
+}

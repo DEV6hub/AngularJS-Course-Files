@@ -1,20 +1,34 @@
-/* jshint -W097 */
-'use strict';
+/* global angular */
+(function () {
+  'use strict';
 
-var app = angular.module('MyApp', []);
+  angular
+    .module('MyApp', [])
+    //Note: Controllers in Alphabetical Order for clarity
+    .controller('ChildCtrl', ChildCtrl)
+    .controller('ChildCtrl2', ChildCtrl2)
+    .controller('ParentCtrl', ParentCtrl)
+    .controller('ParentCtrl2', ParentCtrl2);
 
-app.controller('AppCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
-	$scope.model = {
-		sports: [
-			'Basketball',
-			'Tennis',
-			'Hockey',
-			'Soccer',
-			'Baseball'
-		]
-	};
+  ParentCtrl.$inject = ['$scope'];
+  ChildCtrl.$inject = ['$scope'];
 
-	$scope.getUserInput = function () {
-		alert($scope.model.userInput);
-	};
-}]);
+  function ParentCtrl($scope) {
+    $scope.property = 'Property of parent controller';
+  }
+
+  function ChildCtrl($scope) {
+    $scope.property = 'Property of child controller';
+  }
+
+  function ParentCtrl2() {
+    var vm = this;
+    vm.property = 'Property of parent2 controller';
+  }
+
+  function ChildCtrl2() {
+    var vm = this;
+    vm.property = 'Property of child2 controller';
+  }
+
+})();

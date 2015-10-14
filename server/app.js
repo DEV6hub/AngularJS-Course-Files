@@ -1,30 +1,43 @@
+/* global require,process,__dirname */
 var express = require('express'),
-	routes = require('./routes'),
-	http = require('http'),
-	path = require('path'),
+  routes = require('./routes'),
+  path = require('path'),
+  countries = require('./js/dao/countries.js'),
+  users = require('./js/dao/users');
 
-	users = require('./js/dao/users');
-
-app = express();
+var app = express();
+var bodyParser = require('body-parser');
 
 // all environments
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); //production: set to domain we want to allow service access to
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, x-access-token, X-Auth-Token");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT");
+  next();
+});
+
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(express.favicon());
 app.use(express.logger('dev'));
-app.use(express.bodyParser());
-app.use(express.methodOverride());
+app.use(bodyParser.json());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 if ('development' == app.get('env')) {
-	app.use(express.errorHandler());
+  app.use(express.errorHandler());
 }
 
 app.get('/', routes.index);
-app.post('/getUsers', users.getUsers);
+app.get('/getUsers', users.getUsers);
+app.get('/countries', countries.getCountries);
 
-http.createServer(app).listen(app.get('port'), function () {
-	console.log('Express server listening on port ' + app.get('port'));
+var server = app.listen(3000, function () {
+  var host = server.address().address;
+  var port = server.address().port;
+  console.info('Sample web service app listening at http://%s:%s', host, port);
 });

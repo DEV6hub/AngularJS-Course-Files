@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit05 Directives</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/course.css" />
+</head>
+
+<body ng-app="MyApp">
+
+  <!-- Use the expandable directive as an attribute -->
+  <div expandable class="expandable-box">
+    <div class="header">Header</div>
+    <div class="content">
+      Lorem Ipsum Dolor Sit Amet
+      <br> Cogito ergo sum
+      <br>
+    </div>
+  </div>
+
+  <!-- Use the expandable directive as an element -->
+  <expandable class="expandable-box">
+    <div class="header">Header</div>
+    <div class="content">
+      Lorem Ipsum Dolor Sit Amet
+      <br> Cogito ergo sum
+      <br>
+    </div>
+  </expandable>
+
+  <!-- Note that this directive operates independently of the previous one -->
+  <expandable class="expandable-box">
+    <div class="header">Header</div>
+    <div class="content">
+      Lorem Ipsum Dolor Sit Amet
+      <br> Cogito ergo sum
+      <br>
+    </div>
+  </expandable>
+
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="demo-5a.js"></script>
+</body>
+
+</html>

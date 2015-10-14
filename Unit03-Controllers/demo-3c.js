@@ -1,24 +1,49 @@
-/* jshint -W097 */
-'use strict';
+/* global angular */
+(function () {
+  'use strict';
 
-var app = angular.module('MyApp', []);
+  angular
+    .module('MyApp', [])
+    .controller('AppCtrl', AppCtrl)
+    .controller('InnerCtrl', InnerCtrl);
 
-app.controller('AppCtrl', ['$rootScope', '$scope', function ($scope, $rootScope) {
+  AppCtrl.$inject = ['$scope', '$rootScope'];
 
-	$scope.model = {
-		typingText : 'nothing yet'
-	};
+  function AppCtrl($scope, $rootScope) {
+    var vm = this;
+    vm.typingText = 'nothing yet';
 
-	$scope.$on('my.custom.event', function (event, data) {
-		console.log('data', data);
-		$scope.model.typingText = data.text;
+    $scope.$on('my.custom.event', function (event, data) {
+      console.log('data', data);
+      vm.typingText = data.text;
 
-		$rootScope.$broadcast('my.custom.event.success', {text : 'Got it at ' + (new Date())});
-	});
+      // Broadcast the 'my.custom.event.success' event down through the entire scope chain
+      $rootScope.$broadcast('my.custom.event.success', {
+        text: 'Got it at ' + (new Date())
+      });
+    });
+  }
 
-}]);
+  InnerCtrl.$inject = ['$scope'];
 
-app.controller('InnerCtrl', ['$scope', function ($scope) {
+  function InnerCtrl($scope) {
+    var vm = this;
 
+    // Initialize your controller properties
+    vm.ackCount = 0;
+    vm.lastMessage = '';
 
-}]);
+    vm.emitEvent = function () {
+      $scope.$emit('my.custom.event', {
+        text: 'Hello from the inner scope!'
+      });
+    };
+
+    // Respond to the 'my.custom.event.success' event
+    $scope.$on('my.custom.event.success', function (event, data) {
+      vm.ackCount++;
+      vm.lastMessage = data.text;
+    });
+  }
+
+})();

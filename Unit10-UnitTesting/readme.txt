@@ -1,8 +1,7 @@
-Install NodeJS 10.x
-npm cache clean
+Setup Karma Demo
+
 npm install (adds local karma based on package.json)
-npm install -g karma (adds global karma)
-npm install -g phantomjs (adds global phantomjs)
+npm install -g karma-cli (adds karma command line tool)
 
 TRY npm install karma@canary (if having troubles running tests using phantomjs)
 

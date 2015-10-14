@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Unit07 Routes</title>
-	<link rel="stylesheet" href="../lib/bootstrap-3.0.2/bootstrap.min.css"/>
-	<link rel="stylesheet" href="../assets/css/course.css"/>
+  <title>Unit07 Routes</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/course.css" />
 </head>
+
 <body ng-app="MyApp">
 
   <header>
-    <h1>Cool unchanging application header</h1>
+    <h1>Unchanging Application Header</h1>
   </header>
 
-	<div ng-controller="AppCtrl">
-		
-	</div>
+  <div ng-controller="AppCtrl as app">
+    <p> The current path is {{app.location.path()}}</p>
+  <!-- Define where the route contents should be included -->
+    <ng-view></ng-view>
+  </div>
 
-	<script src="../lib/angular-1.2/angular.js"></script>
-	<!--*** Add ***--><script src="../lib/angular-1.2/angular-route.min.js"></script>
-	<script src="demo-7a.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <!-- Include the ngRoute module -->
+  <script src="../bower_components/angular-route/angular-route.js"></script>
+
+  <script src="demo-7a.js"></script>
 </body>
+
 </html>

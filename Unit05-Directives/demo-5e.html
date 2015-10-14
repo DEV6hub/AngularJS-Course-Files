@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit05 Directives</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/course.css" />
+  <link rel="stylesheet" href="flights.css" />
+</head>
+
+<body ng-app="MyApp">
+
+  <div ng-controller="AppCtrl as app">
+    <label>Traveller's name: </label>
+    <input class="form-control" ng-model="app.userName" />
+    <hr>
+    <flight ng-repeat="flight in app.flights" select="app.book(name)" name="{{flight.name}}" flight="flight"></flight>
+  </div>
+
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="demo-5e.js"></script>
+
+</body>
+
+</html>

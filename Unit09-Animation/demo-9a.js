@@ -1,37 +1,60 @@
-'use strict';
+/* global angular */
+(function () {
+  'use strict';
 
-var app = angular.module('MyApp', ['ngRoute', 'ngAnimate']);
+  angular
+    .module('MyApp', ['ngRoute', 'ngAnimate'])
+    .controller('AppCtrl', AppCtrl)
+    .controller('LoginCtrl', LoginCtrl)
+    .controller('HomeCtrl', HomeCtrl)
+    .config(config);
 
-app.config(['$routeProvider', function ($routeProvider) {
-	$routeProvider
-		.when('/login', {
-			templateUrl : 'view/partials/login.html',
-			controller : 'LoginCtrl'
-		})
-		.when('/home', {
-			templateUrl : 'view/partials/home.html',
-			controller : 'HomeCtrl'
-		})
-		.otherwise({redirectTo : '/login'});
-}]);
+  function config($routeProvider) {
+    $routeProvider
+      .when('/login', {
+        templateUrl: 'view/partials/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
+      })
+      .when('/home', {
+        templateUrl: 'view/partials/home.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'home'
+      })
+      .otherwise({
+        redirectTo: '/login'
+      });
+  }
 
-app.controller('AppCtrl', ['$scope', '$location', function ($scope, $location) {
-	$scope.logout = function () {
-		$location.path('/');
-	};
-}]);
+  function AppCtrl() {
+    var vm = this;
+  }
 
-app.controller('LoginCtrl', ['$scope', '$location', function ($scope, $location) {
-	$scope.model = {
-		email : 'angular@newyyz.com',
-		password : 'password'
-	};
 
-	$scope.login = function () {
-		$location.path('/home');
-	};
-}]);
+  LoginCtrl.$inject = ['$location'];
 
-app.controller('HomeCtrl', ['$scope', function ($scope) {
-	console.log('HomeCtrl init');
-}]);
+  function LoginCtrl($location) {
+    var vm = this;
+    vm.email = 'student@newyyz.com';
+    vm.password = 'password';
+    vm.checked = false;
+
+    vm.login = function () {
+      $location.path('/home');
+    };
+  }
+
+
+  HomeCtrl.$inject = ['$location'];
+
+  function HomeCtrl($location) {
+    var vm = this;
+
+    console.log('HomeCtrl init');
+
+    vm.logout = function () {
+      $location.path('/');
+    };
+  }
+
+})();

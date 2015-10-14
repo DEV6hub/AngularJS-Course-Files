@@ -1,0 +1,1496 @@
+[
+  {
+    "name": "Aruba",
+    "code": "ABW",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Andorra",
+    "code": "AND",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Afghanistan",
+    "code": "AFG",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 20841951231.998
+  },
+  {
+    "name": "Angola",
+    "code": "AGO",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 131400635026.055
+  },
+  {
+    "name": "Albania",
+    "code": "ALB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 13370191506.0031
+  },
+  {
+    "name": "Arab World",
+    "code": "ARB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 2855840877624.21
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "ARE",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 401646583173.427
+  },
+  {
+    "name": "Argentina",
+    "code": "ARG",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 540197457443.535
+  },
+  {
+    "name": "Armenia",
+    "code": "ARM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 10881605059.4369
+  },
+  {
+    "name": "American Samoa",
+    "code": "ASM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "code": "ATG",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1269117037.03704
+  },
+  {
+    "name": "Australia",
+    "code": "AUS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1453770210672.04
+  },
+  {
+    "name": "Austria",
+    "code": "AUT",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 436343622435.169
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "AZE",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 75198010965.1919
+  },
+  {
+    "name": "Burundi",
+    "code": "BDI",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 3093647293.47661
+  },
+  {
+    "name": "Belgium",
+    "code": "BEL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 533382785676.064
+  },
+  {
+    "name": "Benin",
+    "code": "BEN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 8746992733.49967
+  },
+  {
+    "name": "Burkina Faso",
+    "code": "BFA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 12542969275.204
+  },
+  {
+    "name": "Bangladesh",
+    "code": "BGD",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 173818932215.65
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BGR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 55734676434.6764
+  },
+  {
+    "name": "Bahrain",
+    "code": "BHR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 33868989361.7021
+  },
+  {
+    "name": "Bahamas, The",
+    "code": "BHS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 8510500000
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "code": "BIH",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 18344278252.6116
+  },
+  {
+    "name": "Belarus",
+    "code": "BLR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 76139250364.5185
+  },
+  {
+    "name": "Belize",
+    "code": "BLZ",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Bermuda",
+    "code": "BMU",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Bolivia",
+    "code": "BOL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 34175832127.3517
+  },
+  {
+    "name": "Brazil",
+    "code": "BRA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 2346118175194.26
+  },
+  {
+    "name": "Barbados",
+    "code": "BRB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 4348000000
+  },
+  {
+    "name": "Brunei Darussalam",
+    "code": "BRN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 17256754269.1545
+  },
+  {
+    "name": "Bhutan",
+    "code": "BTN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1821412872.84144
+  },
+  {
+    "name": "Botswana",
+    "code": "BWA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 15813371063.1566
+  },
+  {
+    "name": "Central African Republic",
+    "code": "CAF",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1782927902.67286
+  },
+  {
+    "name": "Canada",
+    "code": "CAN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1786655064509.53
+  },
+  {
+    "name": "Central Europe and the Baltics",
+    "code": "CEB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1457835195256.48
+  },
+  {
+    "name": "Switzerland",
+    "code": "CHE",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Channel Islands",
+    "code": "CHI",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Chile",
+    "code": "CHL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 258061522886.545
+  },
+  {
+    "name": "China",
+    "code": "CHN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 10360105247908.3
+  },
+  {
+    "name": "Cote d'Ivoire",
+    "code": "CIV",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 34253611098.3199
+  },
+  {
+    "name": "Cameroon",
+    "code": "CMR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 32548591285.8631
+  },
+  {
+    "name": "Congo, Rep.",
+    "code": "COG",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 14135462555.8413
+  },
+  {
+    "name": "Colombia",
+    "code": "COL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 377739622865.838
+  },
+  {
+    "name": "Comoros",
+    "code": "COM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 647720102.467518
+  },
+  {
+    "name": "Cabo Verde",
+    "code": "CPV",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1871187333.50311
+  },
+  {
+    "name": "Costa Rica",
+    "code": "CRI",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 49552580683.1461
+  },
+  {
+    "name": "Caribbean small states",
+    "code": "CSS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Cuba",
+    "code": "CUB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Curacao",
+    "code": "CUW",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Cayman Islands",
+    "code": "CYM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Cyprus",
+    "code": "CYP",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 23226158986.1653
+  },
+  {
+    "name": "Czech Republic",
+    "code": "CZE",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 205522871251.355
+  },
+  {
+    "name": "Germany",
+    "code": "DEU",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 3852556169656.01
+  },
+  {
+    "name": "Djibouti",
+    "code": "DJI",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1581519705.53068
+  },
+  {
+    "name": "Dominica",
+    "code": "DMA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 537777777.777778
+  },
+  {
+    "name": "Denmark",
+    "code": "DNK",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 341951607730.409
+  },
+  {
+    "name": "Dominican Republic",
+    "code": "DOM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 63968961563.0973
+  },
+  {
+    "name": "Algeria",
+    "code": "DZA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 214063173187.56
+  },
+  {
+    "name": "East Asia & Pacific (developing only)",
+    "code": "EAP",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 12571283022289.8
+  },
+  {
+    "name": "East Asia & Pacific (all income levels)",
+    "code": "EAS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 21421778209784.7
+  },
+  {
+    "name": "Europe & Central Asia (developing only)",
+    "code": "ECA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1811042972360.28
+  },
+  {
+    "name": "Europe & Central Asia (all income levels)",
+    "code": "ECS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 23113307648264.9
+  },
+  {
+    "name": "Ecuador",
+    "code": "ECU",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 100543173000
+  },
+  {
+    "name": "Egypt, Arab Rep.",
+    "code": "EGY",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 286538047765.904
+  },
+  {
+    "name": "Euro area",
+    "code": "EMU",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 13402747137991
+  },
+  {
+    "name": "Eritrea",
+    "code": "ERI",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 3857821138.21138
+  },
+  {
+    "name": "Spain",
+    "code": "ESP",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1404306536057.92
+  },
+  {
+    "name": "Estonia",
+    "code": "EST",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 25904874312.3244
+  },
+  {
+    "name": "Ethiopia",
+    "code": "ETH",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 54797679657.5454
+  },
+  {
+    "name": "European Union",
+    "code": "EUU",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 18460645625271.8
+  },
+  {
+    "name": "Fragile and conflict affected situations",
+    "code": "FCS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 720139811340.846
+  },
+  {
+    "name": "Finland",
+    "code": "FIN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 270673584161.517
+  },
+  {
+    "name": "Fiji",
+    "code": "FJI",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 4029989728.8257
+  },
+  {
+    "name": "France",
+    "code": "FRA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 2829192039171.84
+  },
+  {
+    "name": "Faeroe Islands",
+    "code": "FRO",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Micronesia, Fed. Sts.",
+    "code": "FSM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Gabon",
+    "code": "GAB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 17228443336.3648
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GBR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 2941885537461.48
+  },
+  {
+    "name": "Georgia",
+    "code": "GEO",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 16529963187.4044
+  },
+  {
+    "name": "Ghana",
+    "code": "GHA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 38648154100.3714
+  },
+  {
+    "name": "Guinea",
+    "code": "GIN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 6624068036.98528
+  },
+  {
+    "name": "Gambia, The",
+    "code": "GMB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 807069488.191619
+  },
+  {
+    "name": "Guinea-Bissau",
+    "code": "GNB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1022371991.53467
+  },
+  {
+    "name": "Equatorial Guinea",
+    "code": "GNQ",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 14308094224.6898
+  },
+  {
+    "name": "Greece",
+    "code": "GRC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 237592274370.978
+  },
+  {
+    "name": "Grenada",
+    "code": "GRD",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 882222222.222222
+  },
+  {
+    "name": "Greenland",
+    "code": "GRL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Guatemala",
+    "code": "GTM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 58728232327.1514
+  },
+  {
+    "name": "Guam",
+    "code": "GUM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Guyana",
+    "code": "GUY",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 3228372887.85813
+  },
+  {
+    "name": "High income",
+    "code": "HIC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 52906698875916.5
+  },
+  {
+    "name": "Hong Kong SAR, China",
+    "code": "HKG",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 290896409543.744
+  },
+  {
+    "name": "Honduras",
+    "code": "HND",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 19385309985.8022
+  },
+  {
+    "name": "Heavily indebted poor countries (HIPC)",
+    "code": "HPC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 632555017426.912
+  },
+  {
+    "name": "Croatia",
+    "code": "HRV",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 57222574023.1725
+  },
+  {
+    "name": "Haiti",
+    "code": "HTI",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 8713031260.18934
+  },
+  {
+    "name": "Hungary",
+    "code": "HUN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 137103927312.973
+  },
+  {
+    "name": "Indonesia",
+    "code": "IDN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 888538201025.345
+  },
+  {
+    "name": "Isle of Man",
+    "code": "IMN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "India",
+    "code": "IND",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 2066902397333.26
+  },
+  {
+    "name": "Not classified",
+    "code": "INX",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Ireland",
+    "code": "IRL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 245920712756.466
+  },
+  {
+    "name": "Iran, Islamic Rep.",
+    "code": "IRN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 415338504536.257
+  },
+  {
+    "name": "Iraq",
+    "code": "IRQ",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 220505682865.352
+  },
+  {
+    "name": "Iceland",
+    "code": "ISL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 17071004499.1576
+  },
+  {
+    "name": "Israel",
+    "code": "ISR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 304226336270.324
+  },
+  {
+    "name": "Italy",
+    "code": "ITA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 2144338185064.6
+  },
+  {
+    "name": "Jamaica",
+    "code": "JAM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Jordan",
+    "code": "JOR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 35826925774.6479
+  },
+  {
+    "name": "Japan",
+    "code": "JPN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 4601461206885.08
+  },
+  {
+    "name": "Kazakhstan",
+    "code": "KAZ",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 212247913268.304
+  },
+  {
+    "name": "Kenya",
+    "code": "KEN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 60936509777.9628
+  },
+  {
+    "name": "Kyrgyz Republic",
+    "code": "KGZ",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 7404412710.30546
+  },
+  {
+    "name": "Cambodia",
+    "code": "KHM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 16709432402.6502
+  },
+  {
+    "name": "Kiribati",
+    "code": "KIR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 166762323.638814
+  },
+  {
+    "name": "St. Kitts and Nevis",
+    "code": "KNA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 833333333.333333
+  },
+  {
+    "name": "Korea, Rep.",
+    "code": "KOR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1410382943972.78
+  },
+  {
+    "name": "Kosovo",
+    "code": "KSV",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 7273849011.54305
+  },
+  {
+    "name": "Kuwait",
+    "code": "KWT",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Latin America & Caribbean (developing only)",
+    "code": "LAC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 4763935151056.49
+  },
+  {
+    "name": "Lao PDR",
+    "code": "LAO",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 11771725797.6299
+  },
+  {
+    "name": "Lebanon",
+    "code": "LBN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 45730945273.6318
+  },
+  {
+    "name": "Liberia",
+    "code": "LBR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 2027000000
+  },
+  {
+    "name": "Libya",
+    "code": "LBY",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 41119144922.9802
+  },
+  {
+    "name": "St. Lucia",
+    "code": "LCA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1365426555.55556
+  },
+  {
+    "name": "Latin America & Caribbean (all income levels)",
+    "code": "LCN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 6298365245262.59
+  },
+  {
+    "name": "Least developed countries: UN classification",
+    "code": "LDC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 867876940105.947
+  },
+  {
+    "name": "Low income",
+    "code": "LIC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 397409552238.114
+  },
+  {
+    "name": "Liechtenstein",
+    "code": "LIE",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Sri Lanka",
+    "code": "LKA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 74941183241.9535
+  },
+  {
+    "name": "Lower middle income",
+    "code": "LMC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 5780293080613.99
+  },
+  {
+    "name": "Low & middle income",
+    "code": "LMY",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 24996778875653.9
+  },
+  {
+    "name": "Lesotho",
+    "code": "LSO",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 2088021624.11197
+  },
+  {
+    "name": "Lithuania",
+    "code": "LTU",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 48172242517.2682
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LUX",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Latvia",
+    "code": "LVA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 31920815648.3043
+  },
+  {
+    "name": "Macao SAR, China",
+    "code": "MAC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 55501532528.1462
+  },
+  {
+    "name": "St. Martin (French part)",
+    "code": "MAF",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Morocco",
+    "code": "MAR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 107004984356.97
+  },
+  {
+    "name": "Monaco",
+    "code": "MCO",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Moldova",
+    "code": "MDA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 7944184929.75006
+  },
+  {
+    "name": "Madagascar",
+    "code": "MDG",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 10593147526.9354
+  },
+  {
+    "name": "Maldives",
+    "code": "MDV",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 3032239478.11955
+  },
+  {
+    "name": "Middle East & North Africa (all income levels)",
+    "code": "MEA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 3491393759092.78
+  },
+  {
+    "name": "Mexico",
+    "code": "MEX",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1282719954861.76
+  },
+  {
+    "name": "Marshall Islands",
+    "code": "MHL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Middle income",
+    "code": "MIC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 24597320477555.9
+  },
+  {
+    "name": "Macedonia, FYR",
+    "code": "MKD",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 11323761623.5387
+  },
+  {
+    "name": "Mali",
+    "code": "MLI",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 12074473001.8115
+  },
+  {
+    "name": "Malta",
+    "code": "MLT",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Myanmar",
+    "code": "MMR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 64330038664.7327
+  },
+  {
+    "name": "Middle East & North Africa (developing only)",
+    "code": "MNA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1522605886156.04
+  },
+  {
+    "name": "Montenegro",
+    "code": "MNE",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 4583198885.49821
+  },
+  {
+    "name": "Mongolia",
+    "code": "MNG",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 12015944336.5464
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "code": "MNP",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Mozambique",
+    "code": "MOZ",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 16385584919.0022
+  },
+  {
+    "name": "Mauritania",
+    "code": "MRT",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 5061180371.04941
+  },
+  {
+    "name": "Mauritius",
+    "code": "MUS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 12616421088.3821
+  },
+  {
+    "name": "Malawi",
+    "code": "MWI",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 4258033615.3005
+  },
+  {
+    "name": "Malaysia",
+    "code": "MYS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 326933043800.609
+  },
+  {
+    "name": "North America",
+    "code": "NAC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 19211408095781.6
+  },
+  {
+    "name": "Namibia",
+    "code": "NAM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 13429503284.8968
+  },
+  {
+    "name": "New Caledonia",
+    "code": "NCL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Niger",
+    "code": "NER",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 8168695869.86641
+  },
+  {
+    "name": "Nigeria",
+    "code": "NGA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 568508262377.799
+  },
+  {
+    "name": "Nicaragua",
+    "code": "NIC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 11805641286.8034
+  },
+  {
+    "name": "Netherlands",
+    "code": "NLD",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 869508125480.255
+  },
+  {
+    "name": "High income: nonOECD",
+    "code": "NOC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 6259777325906.14
+  },
+  {
+    "name": "Norway",
+    "code": "NOR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 500103094419.465
+  },
+  {
+    "name": "Nepal",
+    "code": "NPL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 19636186469.3257
+  },
+  {
+    "name": "New Zealand",
+    "code": "NZL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "High income: OECD",
+    "code": "OEC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 46673818635884.3
+  },
+  {
+    "name": "OECD members",
+    "code": "OED",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 48755319331940.2
+  },
+  {
+    "name": "Oman",
+    "code": "OMN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 81796618985.6957
+  },
+  {
+    "name": "Other small states",
+    "code": "OSS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 97543663935.4556
+  },
+  {
+    "name": "Pakistan",
+    "code": "PAK",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 246876324188.576
+  },
+  {
+    "name": "Panama",
+    "code": "PAN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 46212600000
+  },
+  {
+    "name": "Peru",
+    "code": "PER",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 202902760292.698
+  },
+  {
+    "name": "Philippines",
+    "code": "PHL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 284582023120.566
+  },
+  {
+    "name": "Palau",
+    "code": "PLW",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 250625562.7941
+  },
+  {
+    "name": "Papua New Guinea",
+    "code": "PNG",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Poland",
+    "code": "POL",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 548003360278.967
+  },
+  {
+    "name": "Puerto Rico",
+    "code": "PRI",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Korea, Dem. Rep.",
+    "code": "PRK",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Portugal",
+    "code": "PRT",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 229583711490.434
+  },
+  {
+    "name": "Paraguay",
+    "code": "PRY",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 30984747863.3426
+  },
+  {
+    "name": "Pacific island small states",
+    "code": "PSS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 8249482011.13607
+  },
+  {
+    "name": "French Polynesia",
+    "code": "PYF",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Qatar",
+    "code": "QAT",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 211816758241.758
+  },
+  {
+    "name": "Romania",
+    "code": "ROU",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 199043652215.454
+  },
+  {
+    "name": "Russian Federation",
+    "code": "RUS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1860597922763.44
+  },
+  {
+    "name": "Rwanda",
+    "code": "RWA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 7890190336.74963
+  },
+  {
+    "name": "South Asia",
+    "code": "SAS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 2607870627031.73
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "SAU",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 746248533333.333
+  },
+  {
+    "name": "Sudan",
+    "code": "SDN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 73815376184.622
+  },
+  {
+    "name": "Senegal",
+    "code": "SEN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 15578916865.3864
+  },
+  {
+    "name": "Singapore",
+    "code": "SGP",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 307871907185.983
+  },
+  {
+    "name": "Solomon Islands",
+    "code": "SLB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1158183053.76032
+  },
+  {
+    "name": "Sierra Leone",
+    "code": "SLE",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 4892363979.22805
+  },
+  {
+    "name": "El Salvador",
+    "code": "SLV",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 25220000000
+  },
+  {
+    "name": "San Marino",
+    "code": "SMR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Somalia",
+    "code": "SOM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Serbia",
+    "code": "SRB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 43866423166.9368
+  },
+  {
+    "name": "Sub-Saharan Africa (developing only)",
+    "code": "SSA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1712423606591.15
+  },
+  {
+    "name": "South Sudan",
+    "code": "SSD",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 13069991258.2682
+  },
+  {
+    "name": "Sub-Saharan Africa (all income levels)",
+    "code": "SSF",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1728322315101.58
+  },
+  {
+    "name": "Small states",
+    "code": "SST",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 174034474388.17
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "code": "STP",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 334902362.05695
+  },
+  {
+    "name": "Suriname",
+    "code": "SUR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Slovak Republic",
+    "code": "SVK",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 99790145652.7711
+  },
+  {
+    "name": "Slovenia",
+    "code": "SVN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 49416055609.2127
+  },
+  {
+    "name": "Sweden",
+    "code": "SWE",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 570591266159.776
+  },
+  {
+    "name": "Swaziland",
+    "code": "SWZ",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 3400422936.22785
+  },
+  {
+    "name": "Sint Maarten (Dutch part)",
+    "code": "SXM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Seychelles",
+    "code": "SYC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1405764157.88183
+  },
+  {
+    "name": "Syrian Arab Republic",
+    "code": "SYR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "code": "TCA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Chad",
+    "code": "TCD",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 13922224560.7939
+  },
+  {
+    "name": "Togo",
+    "code": "TGO",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 4518443907.44505
+  },
+  {
+    "name": "Thailand",
+    "code": "THA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 373804134911.797
+  },
+  {
+    "name": "Tajikistan",
+    "code": "TJK",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 9241627840.60748
+  },
+  {
+    "name": "Turkmenistan",
+    "code": "TKM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 47931929824.5614
+  },
+  {
+    "name": "Timor-Leste",
+    "code": "TLS",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 1552000000
+  },
+  {
+    "name": "Tonga",
+    "code": "TON",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 434386307.693101
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "code": "TTO",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Tunisia",
+    "code": "TUN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Turkey",
+    "code": "TUR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 799534963353.895
+  },
+  {
+    "name": "Tuvalu",
+    "code": "TUV",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Taiwan, China",
+    "code": "TWN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Tanzania",
+    "code": "TZA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 49183884817.4917
+  },
+  {
+    "name": "Uganda",
+    "code": "UGA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 2312399301.4086
+  },
+  {
+    "name": "Ukraine",
+    "code": "UKR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 131805126738.287
+  },
+  {
+    "name": "Upper middle income",
+    "code": "UMC",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 18808331730421.9
+  },
+  {
+    "name": "Uruguay",
+    "code": "URY",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 57471277325.1312
+  },
+  {
+    "name": "United States",
+    "code": "USA",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 17419000000000
+  },
+  {
+    "name": "Uzbekistan",
+    "code": "UZB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 62643953021.7594
+  },
+  {
+    "name": "St. Vincent and the Grenadines",
+    "code": "VCT",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 728696703.703704
+  },
+  {
+    "name": "Venezuela, RB",
+    "code": "VEN",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 509964084931.332
+  },
+  {
+    "name": "Virgin Islands (U.S.)",
+    "code": "VIR",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "Vietnam",
+    "code": "VNM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 186204652922.262
+  },
+  {
+    "name": "Vanuatu",
+    "code": "VUT",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "West Bank and Gaza",
+    "code": "PSE",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 12737613125.0175
+  },
+  {
+    "name": "World",
+    "code": "WLD",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 77868767983901.5
+  },
+  {
+    "name": "Samoa",
+    "code": "WSM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 800586671.241101
+  },
+  {
+    "name": "Yemen, Rep.",
+    "code": "YEM",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 0
+  },
+  {
+    "name": "South Africa",
+    "code": "ZAF",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 349817096206.474
+  },
+  {
+    "name": "Congo, Dem. Rep.",
+    "code": "COD",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 32962261155.6762
+  },
+  {
+    "name": "Zambia",
+    "code": "ZMB",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 27066230009.1016
+  },
+  {
+    "name": "Zimbabwe",
+    "code": "ZWE",
+    "indicatorName": "GDP (current US$)",
+    "gdp": 13663314279.6683
+  }
+]

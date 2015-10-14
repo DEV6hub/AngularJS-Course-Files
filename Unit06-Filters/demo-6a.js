@@ -1,42 +1,48 @@
-// *** Start the server! ***
+/* global angular */
+(function () {
+  'use strict';
 
-'use strict';
+  // *** Remember to start the server! ***
 
-var app = angular.module('MyApp', []);
+  angular
+    .module('MyApp', [])
+    .factory('httpService', httpService)
+    .controller('MyCtrl', MyCtrl);
 
-app.factory('httpService', ['$http', function ($http) {
+  httpService.$inject = ['$http'];
 
-	var httpService = {
+  function httpService($http) {
+    var factory = {
+      query: function () {
+        var promise = $http({
+          method: 'GET',
+          url: 'http://localhost:3000/getUsers'
+        });
+        return promise;
+      }
+    };
+    return factory;
+  }
 
-		send : function () {
-			var promise = $http({
-				method : 'POST',
-				url : 'http://localhost:3000/getUsers'
-			});
-			return promise;
-		}
-	};
 
-	return httpService;
-}]);
+  MyCtrl.$inject = ['httpService'];
 
-app.controller('MyCtrl', ['$scope', 'httpService', function ($scope, httpService) {
-	$scope.model = {
-		users : []
-	}
+  function MyCtrl(httpService) {
+    var vm = this;
+    vm.users = [];
 
-	$scope.getUsers = function () {
-		var promise = httpService.send();
-		promise.then(
-			function success(result) {
-				console.log('result: ', result);
-				$scope.model.users = result.data;
-			},
-			function failure(error) {
-				console.log('error: ', error);
-			}
-		);
-	};
+    vm.getUsers = function () {
+      var promise = httpService.query();
+      promise.then(
+        function success(result) {
+          console.log('result: ', result);
+          vm.users = result.data;
+        },
+        function failure(error) {
+          console.log('error: ', error);
+        }
+      );
+    };
+  }
 
-}]);
-
+})();

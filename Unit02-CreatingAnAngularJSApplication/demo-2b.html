@@ -3,23 +3,33 @@
 
 <head>
   <title>Unit02 Creating An AngularJS Application</title>
-  <link rel="stylesheet" href="../lib/bootstrap-3.0.2/bootstrap.min.css" />
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../assets/css/course.css" />
 </head>
 
-<body ng-app="myApp">
+<!-- Give your app a module name -->
+<body ng-app='myApp'>
 
   <div>
-    <input type="text" ng-model="model.typingText" />
+    <input type="text" ng-model="typingText" />
   </div>
 
   <div class="alert alert-success">
-    You said {{ model.typingText }}
+    You said {{ typingText }}
+  </div>
+  <div>
+    <!-- Evaluate an expression -->
+    1+1={{ 1+1 }}
   </div>
 
-
-  <script src="../lib/angular-1.2/angular.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <!-- Include your JS file where your app module is declared -->
   <script src="demo-2b.js"></script>
 </body>
 
 </html>
+
+
+
+
+

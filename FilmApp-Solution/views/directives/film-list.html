@@ -1,0 +1,12 @@
+<div class="text-right">
+  <div class="checkbox-container">
+    <a href="#/watched"><img class="gray-eye"></a>
+  </div>
+  <div class="checkbox-container">
+    <a href="#/faves"><img class="gray-heart"></a>
+  </div>
+  <div class="checkbox-container">
+    <img class="accordion-toggle">
+  </div>
+</div>
+<film film="film" index="$index" remove="remove({film: film})" ng-repeat="film in films | filterBy: show | filter: search"></film>

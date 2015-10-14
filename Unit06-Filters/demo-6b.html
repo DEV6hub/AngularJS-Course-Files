@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Unit06 Filters</title>
-	<link rel="stylesheet" href="../lib/bootstrap-3.0.2/bootstrap.min.css"/>
-	<link rel="stylesheet" href="../assets/css/course.css"/>
+  <title>Unit06 Filters</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/course.css" />
 </head>
+
 <body ng-app="MyApp">
 
-	<div ng-controller="MyCtrl">
-		<button class="btn btn-success" ng-click="getUsers()">Get Users</button>
+  <div ng-controller="MyCtrl as ctrl">
+    <button class="btn btn-success" ng-click="ctrl.getUsers()">Get Users</button>
 
-		<hr/>
+    <hr/>
 
-		<input type="text" ng-model="model.searchText"/>
+    <input type="text" ng-model="ctrl.searchText" />
 
-		<table class="table-bordered">
-			<tr ng-repeat="user in model.users | filter: model.searchText">
-				<td>{{ user.firstName }}</td>
-				<td>{{ user.lastName }}</td>
-				<td>{{ user.email }}</td>
-			</tr>
-		</table>
-	</div>
+    <table class="table-bordered">
 
-	<script src="../lib/angular-1.2/angular.js"></script>
+      <!-- Search all fields by searchText -->
+      <tr ng-repeat="user in ctrl.users | filter: ctrl.searchText">
 
-	<!--***--><script src="../lib/underscore-1.5.2/underscore.js"></script>
-	<!--***--><script src="../lib/underscore-1.5.2/underscore.string.min.js"></script>
+      <!-- Convert firstName and lastName using our new titleCase filter -->
+        <td>{{ user.firstName | titleCase }}</td>
+        <td>{{ user.lastName | titleCase }}</td>
+        <td>{{ user.email }}</td>
+      </tr>
+    </table>
+  </div>
 
-	<script src="demo-6b.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+
+  <!-- Include the Underscore String library -->
+  <script src="../bower_components/underscore.string/dist/underscore.string.js"></script>
+
+  <script src="demo-6b.js"></script>
 </body>
+
 </html>

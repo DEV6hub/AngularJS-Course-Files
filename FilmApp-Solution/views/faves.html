@@ -1,0 +1,7 @@
+<h1>These are my <span class="accent">Faves</span></h1>
+<hr>
+<div class="input-group search-bar">
+  <input type="text" class="form-control search-form-input" placeholder="Search through my list by title" ng-model="faves.search">
+  <span class="input-group-addon bar-style"><i class="glyphicon glyphicon-search"></i></span>
+</div>
+<film-list films="faves.films" search="faves.search" remove="faves.removeFilm(film)" show="favourite"></film-list>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit04 Services</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/course.css" />
+</head>
+
+<body ng-app="MyApp">
+
+  <div ng-controller="MyCtrl as ctrl">
+    <button class="btn btn-success" ng-click="ctrl.getUsers()">Get Users</button>
+
+    <hr>
+
+    <table class="table-bordered">
+      <tr ng-repeat="user in ctrl.users">
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.email }}</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="demo-4b.js"></script>
+</body>
+
+</html>
